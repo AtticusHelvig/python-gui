@@ -2,10 +2,11 @@ from tkinter import *
 
 root = Tk()
 
-label0 = Label(root, text="Grid System")
-label1 = Label(root, text="Is Cool")
+def click():
+    label = Label(root, text="You clicked.")
+    label.pack()
 
-label0.grid(row=0, column=0)
-label1.grid(row=1, column=0)
+button1 = Button(root, text="Click Me!", command=click, bg="gray")
+button1.pack()
 
 root.mainloop()

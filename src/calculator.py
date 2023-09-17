@@ -2,6 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.title("Calculator")
+root.iconbitmap('calc.ico')
 
 def num_key(number):
     current = entry.get()
